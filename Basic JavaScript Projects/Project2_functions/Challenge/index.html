@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        
+        <!-- h1 tells JS how to display the function, in this case, it'll display it as a header 1.
+        it could display as a paragraph too if we display it -->
+        <h1 id="demo"></h1> 
+
+    
+    
+    <!-- the script tag indicates the beginning of the JS code ---->
+    <script> // after script tags, if I want to make comments, I have to use two backslashes, given that this is all JS code //
+            document.getElementById("demo").innerHTML = //the document.getElementById method, tells my JS that it will call whatever Id I give it//
+            //in this case, I gave asked my JS code to call the "demo" id within my HTML file//
+            //the inner.HTML property, tells my function to make use of the content within the element identified --in this case-- as 'demo'//             
+"The temperature is " + toCelsius(77) + " Celsius";
+
+function toCelsius(farenheit)   {
+    return (5/9) * (farenheit-32);
+    }
+    </script>
+    
+    <!--------- below, is the function that i created myself ------>
+
+    <h2 id="test2">this should not display</h2>
+    <script>
+        document.getElementById("test2").innerHTML =
+        "this text should" + " display instead";
+
+
+    </script>
+
+    </body>
+
+</html>
