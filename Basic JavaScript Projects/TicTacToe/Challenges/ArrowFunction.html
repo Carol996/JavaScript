@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html   lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <title>Arrow Function Challenge</title>
+    </head>
+
+    <body>
+        <h1>Demo Arrow Function</h1>
+        <p id="demo"></p>
+        <script>
+            let myFunction = (a, b) => a * b;
+            document.getElementById("demo").innerHTML = myFunction(4, 5);
+        </script>
+
+<!--   without the arrow function, the same fucntion would look like this
+        
+    
+        <script>
+            myFunction = function (a, b)    {
+                return (a * b);
+            }
+            document.getElementById("demo").innerHTML = myFunction(4, 5);
+        </script>
+
+
+        ---------- the arrow function lets us delete:
+        ---- the word 'function'
+        ---- the word 'return'
+        ---- curly brackets
+
+-->
+
+    </body>
+</html>
