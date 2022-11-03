@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery</title>
+        <script src="jQuery Files/jquery-3.6.1.js"></script>
+    </head>
+        <script>
+            $(document).ready(function()    {
+                $("html").append(
+                    "<body>\
+                        <div id='container'>\
+                            <div id='inner'>\
+                                <h1>jQuery Events Sample</h1>\
+                                <button id='1st'>Click here for an event</button>\
+                                <p id='2nd'>This is an effect</p>\
+                            </div>\
+                        </div>\
+                    </body>"
+                );
+
+                //this event was setup using a convenience method
+                $("#1st").click(function () {
+                    window.alert("The event has happened.");
+                });
+
+                // this effect slowly hides all paragraphs
+                $( "p" ).hide( "slow" );
+
+            });
+        </script>
+
+    <body>
+
+    </body>
+</html>

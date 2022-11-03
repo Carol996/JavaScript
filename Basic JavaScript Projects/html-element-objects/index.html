@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>create elements</title>
+    </head>
+    <body>
+        <h1>The Document Object</h1>
+        <h2>The CreateElement() Method</h2>
+        <p>All html elements are nodes<br>The createElement() metod creates an element node.</p>
+    
+        <p>Create a h1 element with some text:</p>
+    
+        
+        
+        <script>//syntax for creating elements below
+        const h1 = document.createElement("H1");
+        const textNode = document.createTextNode("this is javascript");//this specifies what you want the content within that element to be
+        h1.appendChild(textNode);//appendChild allows me to add a node to the end of the list of child nodes
+        document.body.appendChild(h1);
+
+
+        //more info on parent/child nodes here: https://www.javascripttutorial.net/javascript-dom/javascript-appendchild/
+        </script>
+
+    </body>
+</html>
