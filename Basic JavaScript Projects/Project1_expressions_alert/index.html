@@ -1,23 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="viewport" content="width-device-width, initial-scale=1.0"> <!--- added name and content for vw property on h1 and p below --->
+        <script src="../Project1_expressions_alert/JS/main.js"></script>
     </head>
 
     <body>
-        <script
-            src="../Project1_expressions_alert/JS/main.js">
-        </script>
+        <style>
+                /* i could add an 
+                html{ background-color: black; }
+                css property if I want the fade effect to happen from black screen.
+                It would work alongside the .fade-out property below*/
+
+            body {
+                opacity: 1; /* these two porperties are used for the fade effect while loading the page */
+                transition: 1s opacity;
+            }
+
+            body.fade-out { /* these two porperties are also used for the fade effect*/
+                opacity: 0;
+                transition: none;
+            }
+
+            h1  {
+                color:green;
+            }
+
+            table {
+                border: 5px solid black;
+                background-color: olive;
+                color: wheat;
+            }
+
+            th  {
+                padding:30px;
+                border: 2px solid black;
+                text-align: center;
+            }
+
+            td  {
+                padding: 30px;
+                border: 2px solid black;
+            }
+
+            button  {
+                background-color: #86c183;
+                padding: 20px;
+                margin-left: 2.5%;
+                border-radius: 25px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color:#3f5c3d;
+
+            }
+            
+
+        </style>
+        
+        
+        <h1 style="font-size:7vw;">This is the Header for my Page</h1> 
+        <!---  style added to specify font size; vw makes it so that it resizes based on the size of the browser window  ---->
+        
         
         <div>
             <table>
-                <th><p>HTML Event</p></th>
-                <td><p>An HTML event can be something the browser does,<br>or something a user does</p></td>
+                <th><p style="font-size:2vw;">HTML Event</p></th>
+                <td><p style="font-size:2vw;">An HTML event can be something the browser does,<br>or something a user does</p></td>
             </table>
         </div>
         
         <div>
             <button onclick="this.innerHTML = Date()">The time is?</button>
         </div>
+
+        <script>
+            document.body.classList.add('fade-out'); // this must be within the html doc to prevent flickering
+            //otherwise, the body would be briefly visible until the extra script is downloaded by the browser
+
+            window.addEventListener('DOMContentLoaded', () => { //this is added so that the fade-out class
+                document.body.classList.remove('fade-out'); //is removed from the body once the page is loaded
+            });
+        </script>
     </body>
 </html>

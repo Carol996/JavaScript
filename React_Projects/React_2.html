@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src= "https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react.js"></script>
+        <script src= "https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react-dom.js"></script>
+    </head>
+
+    <body>
+        <div id="like_button_container"></div>
+        <script>
+            const X = React.createElement;
+
+            class likeButton extends React.Component    {
+                constructor(props)  { // props is short for 'properties'
+                    super(props); // super calls a constructor, a constructor creates an object within a class
+                    this.state = {liked: false};
+                }
+
+                render()    {
+                    if (this.state.liked)   {
+                        return 'You clicked the like button';
+                    }
+
+                    return X(
+                        'button',
+                        { onclick: () => this.setState ({liked : true})}, //setState schedules a UI update
+                        'Like'
+                    );
+                }
+            }
+
+            const domContainer = document.querySelector('#like_button_container');
+            ReactDOM.render(X(likeButton), domContainer);
+        </script>
+    </body>
+</html>

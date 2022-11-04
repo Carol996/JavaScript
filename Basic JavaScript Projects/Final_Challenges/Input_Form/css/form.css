@@ -1,0 +1,60 @@
+html    {
+    background-color: #ceeac6;
+}
+
+body {
+    text-align: center;
+}
+form {
+    display: inline-block;
+}
+
+.headers {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    color: #003300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.outer  {
+    margin: auto;
+    width: 30%;
+    border: 1px dashed #4594566d;
+    border-radius: 10px;
+    background-color: #4594566d;
+    padding: 40px;
+}
+
+
+.fn, .ln, .pn, .btn {
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.terms  {
+    padding: 30px;
+    margin:10px 0;
+}
+
+.terms:hover    {
+    cursor: pointer;
+    color:rgb(0, 75, 2);
+}
+
+
+.btn    {
+    background-color: #003300;
+    color:#7baf6c;
+    border: none;
+}
+
+.btn:hover  {
+    cursor: pointer;
+    background-color: #7baf6c;
+    color:#003300;
+}
+
