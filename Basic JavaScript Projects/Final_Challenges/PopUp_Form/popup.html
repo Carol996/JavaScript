@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/pop.css">
+    </head>
+
+    <body>
+    <button class="open-button" onclick="openForm()">Sign up!</button> <!-- when this button is clicked, it will call the function openForm -->
+
+    <div class="form-popup" id="myForm">
+    <form action="https://formspree.io/f/xbjbkyye" class="form-container">
+        <h1>Sign Up</h1>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit" class="btn">Sign up</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button><!-- when the user submits the form, it will call the closeForm function -->
+    </form>
+    </div>
+
+
+    <script src="js/popup.js"></script>
+    </body>
+</html>

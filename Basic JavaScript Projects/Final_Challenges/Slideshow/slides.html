@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Slideshow</title>
+        <link rel="stylesheet" type="text/css" href="css/slides.css">
+    </head>
+
+    <body>
+
+        <h1>Groceries</h1>
+        
+        <div id="slideshow" class="container">            
+                <img src="img/one.jpg">      
+                <img src="img/three.jpg">  
+                <img src="img/four.jpg">            
+        </div>
+    
+    <script>
+        (function() {
+                var imgLen = document.getElementById('slideshow');
+                var images = imgLen.getElementsByTagName('img');
+                var counter = 0;
+
+                if (counter <= images.length) { //if the counter is less than the total number of images then exe this function
+                    setInterval(function() {
+                    images[0].src = images[counter].src;
+                    console.log(images[counter].src);
+                    counter++;
+
+                    if (counter === images.length) {
+                        counter = 0;//this means: if the counter reaches the third image, to go back to the 1st one
+                    }
+                    }, 2000); //this number tells me how slow or fast i want the images to move
+                }
+                })();
+    </script>        
+    </body>
+</html>
