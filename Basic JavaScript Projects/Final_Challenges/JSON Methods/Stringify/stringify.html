@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+    <h2>JSON Stringify</h2>
+
+    <p id="person"></p>
+
+        <script>
+        var o = { "name":"Andrea", "age":18, "city":"Los Angeles"}; //variable has key value pairs
+        var myJSON = JSON.stringify(o); //variable equals to json stringify method --means that json will take the object above and turn it into a string
+        document.getElementById("person").innerHTML = myJSON; // we tell the computer to display the string under whatever element is IDed as "person"
+        </script>
+
+    </body>
+</html>

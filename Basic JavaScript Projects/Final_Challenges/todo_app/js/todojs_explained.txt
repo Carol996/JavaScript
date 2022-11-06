@@ -1,0 +1,22 @@
+
+there is a function called 'get_todos', this function is composed of two variables
+first variable 'todos' equals to whatever array of tasks are inputted by the user. This variable is commanded to CREATE a new array.
+second variable 'todos_str' is whatever string was stored temporarily in the browser
+if todos_str doesn't equal to null, meaning if there's a string present as a 'todo' item, then...
+...that 'todo' item --represented as a string, should be parsed into a JS object; this happens using a JSON method.
+
+the function get_todos will return whatever 'todos' is, after going through the parse process above.
+
+
+there is a new function called add and it has two variables
+1st variable is 'task' and it's equal to wahtever value is in <input> within HTML doc
+2nd variable is 'todos' and it's equivalent to the function above, get_todos
+
+here we ask variable 'todos' to add a new task at the end of the array created above
+then we ask the program to turn the jsobj in the browser storage into a string using JSON method...
+..and show whatever is in <input>
+using the 'show' function, which will be defined below
+
+
+
+

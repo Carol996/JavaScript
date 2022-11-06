@@ -1,0 +1,44 @@
+html    {
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    text-align: center;
+}
+
+body    {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input   {
+    padding-top: 30px;
+    width: 500px;
+    height: 60px;
+    font-size: 40px;
+    border: 0;
+}
+
+input:focus     {
+    outline: none;
+}
+
+li  {
+    text-align: left;
+    font-size: 40px;
+    list-style: none;
+    margin: 0;
+}
+
+footer {
+    position: fixed; /* keeps footer on a fixed position */
+    left: 0;
+    bottom: 0;/* left and bottom specify the 'coordinates' where I want my footer to be */
+    width: 100%;
+    padding: 5px;
+    border-top: 1px dashed red; /* formats the top of the "box" the footer is contained within */
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+    text-align: center; /* puts the text in my footer in the center of the page */
+ }
+
+ .remove    {
+    padding-bottom: 5px;
+ }

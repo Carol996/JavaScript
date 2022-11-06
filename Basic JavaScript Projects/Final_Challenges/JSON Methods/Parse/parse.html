@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Parse</title>
+    </head>
+
+    <body>
+        <h1>JSON parse()</h1>
+
+    <p>JSON.parse() parses a string, written in JSON format, and returns a JavaScript object.</p>
+    <p>The value of "firstName" is:</p>
+    <p id="demo"></p>
+
+    <script>
+        var obj = JSON.parse('{"firstName":"John", "lastName":"Doe"}'); // this is a string. if we remove the JSON.parse and request document.write this variable, it will return the entire string as is
+        document.getElementById("demo").innerHTML = obj.firstName;//this returns the value of firstName because JSON.parse turned the string into an object
+    </script>
+            
+    </body>
+</html>
